@@ -4,7 +4,7 @@ public class CloudEffect : MonoBehaviour
 {
 	public static CloudEffect Instance;
 	
-	public ParticleSystem smokeEffect;
+	public ParticleSystem SmokeEffect;
 	
 	void Awake()
 	{
@@ -20,7 +20,7 @@ public class CloudEffect : MonoBehaviour
 	public void Explosion(Vector3 position)
 	{
 		// Smoke
-		instantiate(smokeEffect, position);
+		instantiate(SmokeEffect, position);
 	}
 
 	/// Instantiate a Particle system from prefab
