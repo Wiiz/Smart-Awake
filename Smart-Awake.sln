@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{5B9528F3-C08F-8A5F-57CB-BBE73E345327}") = "Smart-Awake", "Assembly-CSharp.csproj", "{C57A1BE3-91B4-A975-9826-ED4BE916D675}"
 EndProject
+Project("{5B9528F3-C08F-8A5F-57CB-BBE73E345327}") = "Smart-Awake", "Assembly-UnityScript.unityproj", "{D5720428-E8FE-6C54-D2C8-6BFDA7D7CED7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{C57A1BE3-91B4-A975-9826-ED4BE916D675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C57A1BE3-91B4-A975-9826-ED4BE916D675}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C57A1BE3-91B4-A975-9826-ED4BE916D675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5720428-E8FE-6C54-D2C8-6BFDA7D7CED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5720428-E8FE-6C54-D2C8-6BFDA7D7CED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5720428-E8FE-6C54-D2C8-6BFDA7D7CED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5720428-E8FE-6C54-D2C8-6BFDA7D7CED7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																	GlobalSection(MonoDevelopProperties) = preSolution
+																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

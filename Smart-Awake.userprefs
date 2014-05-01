@@ -2,8 +2,8 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CheckLetters.cs">
     <Files>
-      <File FileName="Assets\Scripts\CheckLetters.cs" Line="5" Column="8" />
-      <File FileName="Assets\Scripts\CheckLetters.cs" Line="17" Column="2" />
+      <File FileName="Assets\Scripts\FloatScript.js" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\CheckLetters.cs" Line="6" Column="18" />
       <File FileName="Assets\Scripts\MenuScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\CloudEffect.cs" Line="1" Column="1" />
     </Files>
