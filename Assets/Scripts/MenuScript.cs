@@ -28,7 +28,7 @@ public class MenuScript : MonoBehaviour
 			)
 			)
 		{
-			Application.LoadLevel("start");
+			Application.LoadLevel("word");
 		}
 
 		if (GUI.Button(
@@ -58,7 +58,7 @@ public class MenuScript : MonoBehaviour
 			)
 		    )
 		{
-			Application.LoadLevel("quit");
+			Application.Quit();
 		}
 	}
 
