@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{C57A1BE3-91B4-A975-9826-ED4BE916D675}</ProjectGuid>
+	<ProjectGuid>{D5720428-E8FE-6C54-D2C8-6BFDA7D7CED7}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,9 +46,32 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CheckLetters.cs" />
-     <Compile Include="Assets\Scripts\CloudEffect.cs" />
-     <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Cloud System Demos\Scripts\Effects\ChangeShadingInfluence.js" />
+     <Compile Include="Assets\Cloud System Demos\Scripts\Effects\FadeCloud.js" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\TRADEMARKS.txt" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\FONTLOG.txt" />
+     <None Include="Assets\Plugins\Cloud System\Resources\Shaders\MobileLightningCloudShader.shader" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\README.txt" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\CONTRIBUTING.txt" />
+     <None Include="Assets\Plugins\Cloud System\Resources\Shaders\MobileCloudLightingModel.cginc" />
+     <None Include="Assets\Plugins\Cloud System\Resources\Shaders\LightningCloudShader.shader" />
+     <None Include="Assets\Plugins\Cloud System\Resources\Shaders\CloudLightingModel.cginc" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\LICENCE-FAQ.txt" />
+     <None Include="Assets\Plugins\Cloud System\Resources\Shaders\CloudShader.shader" />
+     <None Include="Assets\Plugins\Cloud System\Release Notes.txt" />
+     <None Include="Assets\Plugins\Cloud System\Resources\Shaders\SoftCloudShader.shader" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\copyright.txt" />
+     <None Include="Assets\Plugins\Cloud System\Readme.txt" />
+     <None Include="Assets\Cloud System Demos\Assets\GUI\Fonts\Ubunto Font Family\LICENCE.txt" />
+     <None Include="Assets\Cloud System Demos\Assets\Sounds\Source.txt" />
+     <None Include="Assets\Plugins\Cloud System\CloudSystem.Runtime.xml" />
+ <Reference Include="CloudSystem.Runtime">
+ <HintPath>Assets\Plugins\Cloud System\CloudSystem.Runtime.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{CD527F56-C170-466D-B0ED-4CAFC4387870}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
