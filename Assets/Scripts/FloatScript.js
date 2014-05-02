@@ -7,9 +7,11 @@ private var startY : float;
 
 function Start() {
     startY = transform.position.y;
- 
+
+    
 }
- 
-function Update() {
+
+function Update()
+{
     transform.position.y = startY + Mathf.Sin(Time.time * speed) * floatSpan / 2.0;
 }

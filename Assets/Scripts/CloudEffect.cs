@@ -32,7 +32,7 @@ public class CloudEffect : MonoBehaviour
 			Quaternion.identity
 			) as ParticleSystem;
 		
-		// Make sure it will be destroyed
+		// Destroy
 		Destroy(
 			newParticleSystem.gameObject,
 			newParticleSystem.startLifetime
