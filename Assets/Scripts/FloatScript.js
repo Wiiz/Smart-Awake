@@ -5,10 +5,9 @@ var speed  = 1.0;
 
 private var startY : float;
 
-function Start() {
+function Start() 
+{
     startY = transform.position.y;
-
-    
 }
 
 function Update()

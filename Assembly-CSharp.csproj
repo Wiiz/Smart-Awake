@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\CheckLetters.cs" />
      <Compile Include="Assets\Scripts\CloudEffect.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\SoundEffect.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

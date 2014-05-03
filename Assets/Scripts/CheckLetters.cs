@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+
 public class CheckLetters : MonoBehaviour
 {
 	void OnGUI () 
@@ -15,13 +16,9 @@ public class CheckLetters : MonoBehaviour
 			if(Input.GetMouseButtonDown(0))
 			{
 				isHit = false;
+				SoundEffect.Instance.MakeBoopSound();
 				Destroy(hit.collider.gameObject);
 			}
 		}
-	}
-
-	void Update()
-	{
-
 	}
 }
