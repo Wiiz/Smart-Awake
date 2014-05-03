@@ -9,7 +9,9 @@ function Start ()
 
 function RandomWord(length : int) : String 
 {
-    var wordArray : String[] = ["BONJOUR","JOUET","CACAHUETE","NUIT","DANSER","VACHE","VUE","MAMAN","PAPA","DOUDOU","PELUCHE","TABLE","TELEVISION","MASQUE","RIRE","CAMERA","LAMPE"];
+    var wordArray : String[] = ["BONJOUR","JOUET","CACAHUETE","NUIT","DANSER","VACHE","CARTABLE","MAMAN","PAPA","DOUDOU","PELUCHE","TABLE","TELEVISION",
+    							"MASQUE","RIRE","CAMERA","LAMPE","PAUSE","VIANDE","STYLO","TROUSSE","SOURIS","ECRAN","BOUTON","CHAISE","PAPIER",
+    							"FENETRE","PORTE","CLAVIER"];
     var returnWord : String;
     
     for (var i : int = 0; i < length; i++) 

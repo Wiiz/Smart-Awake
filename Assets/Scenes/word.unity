@@ -230,7 +230,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004016989}
-  m_Text: 'Voici le mot :'
+  m_Text: 'Ecris le mot suivant :'
   m_OffsetZ: 0
   m_CharacterSize: 1.5
   m_LineSpacing: 1
@@ -272,7 +272,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2004016989}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -22.3482933, y: 19.1741676, z: 0}
+  m_LocalPosition: {x: -41.9312592, y: 19.6243515, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
