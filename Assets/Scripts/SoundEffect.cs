@@ -24,7 +24,7 @@ public class SoundEffect : MonoBehaviour
 
 	private void MakeSound(AudioClip originalClip)
 	{
-		// As it is not 3D audio clip, position doesn't matter.
+	
 		AudioSource.PlayClipAtPoint(originalClip, transform.position);
 	}
 }
