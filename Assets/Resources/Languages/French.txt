@@ -1,0 +1,21 @@
+/Resources/Languages/
+
+
+english = Start !
+
+
+spanish = espagnole #n (Spanish)
+
+
+french = Commencer !
+
+
+russian = russe #n (Russian)
+
+
+italian = italienne #n (Italian)
+
+
+chinese = chinois #n (Chinese)
+
+

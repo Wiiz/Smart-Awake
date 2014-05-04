@@ -1,0 +1,26 @@
+/Resources/Languages/
+
+english = Anglais
+
+
+spanish = Espagnole 
+
+
+french = Français
+
+
+russian = Russe
+
+
+italian = Italien 
+
+
+chinese = Chinois 
+
+Commencer = Commencer !
+
+Quitter = Quitter 
+
+Score = Score
+
+
