@@ -1,5 +1,9 @@
 ﻿#pragma strict
 
+var currentWord = "";
+
+
+
 function Start () 
 {
     var myRandomString : String = RandomWord(1);
@@ -16,11 +20,17 @@ function RandomWord(length : int) : String
     
     for (var i : int = 0; i < length; i++) 
     {
-        returnWord+=wordArray[Random.Range(0, wordArray.Length)]+" ";
+        returnWord += wordArray[Random.Range(0, wordArray.Length)] + " ";
     }
      
      GetComponent(TextMesh).text = returnWord;
+     currentWord = returnWord;
      
+}
+
+function getCurrentWord()
+{
+	return (this.currentWord);
 }
 
 

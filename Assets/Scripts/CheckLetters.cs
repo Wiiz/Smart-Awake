@@ -12,26 +12,36 @@ public class CheckLetters : MonoBehaviour
 		Ray rayMouse = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hitMouse;
 		int missed = 0;
+		char currentLetter = '\0';
 		if(Input.GetMouseButtonDown(0))
 		{
 			if(Physics.Raycast(rayMouse,out hitMouse))
 			{
-				onHit (hitMouse);
+				currentLetter = onHit (hitMouse);
+
+
 			} else {
 				missed++;
 			}
 		}
+		SendMessage("renderLetter" , currentLetter);
 	}
 
 
-	void onHit (RaycastHit hit)
+	char onHit (RaycastHit hit)
 	{
 		GameObject current = hit.collider.gameObject;
-		Debug.Log (rayLetter (current));
+		char currentLetter = rayLetter (current);
+
+
+
+		Destroy(current);
 		SoundEffect.Instance.MakeBoopSound();
 		CloudEffect.Instance.Explosion(hit.point);
-		Destroy(current);
+
+		return(currentLetter);
 	}
+
 
 
 	char rayLetter (GameObject go)
