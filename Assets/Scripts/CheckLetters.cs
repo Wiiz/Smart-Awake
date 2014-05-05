@@ -6,17 +6,21 @@ using System;
 public class CheckLetters : MonoBehaviour
 {
 
-	bool isHit;
-	GameObject currentGo;
-	
+	public bool isHit;
+	public GameObject currentGo;
+	public string currentWord;
+
+
+
 	void OnGUI () 
 	{ 
 		GUI.depth = 2;
-		isHit = false;
+
 	}
 
 	void Update()
 	{
+		isHit = false;
 		Ray rayMouse = Camera.main.ScreenPointToRay(Input.mousePosition);
 		RaycastHit hitMouse;
 		int missed = 0;
@@ -26,8 +30,9 @@ public class CheckLetters : MonoBehaviour
 		{
 			if(Physics.Raycast(rayMouse, out hitMouse) && !isHit)
 			{
-				currentLetter = onHit (hitMouse);
 				isHit = true;
+				currentLetter = onHit (hitMouse);
+
 				
 			} else {
 				missed++;
@@ -48,10 +53,11 @@ public class CheckLetters : MonoBehaviour
 		{
 			currentGo = hit.collider.gameObject;
 			char currentLetter = rayLetter (currentGo);
-
-			SoundEffect.Instance.MakeBoopSound (); //making some noise
+			SendMessage("renderLetter", currentLetter);
+			Debug.Log(currentLetter);
 			CloudEffect.Instance.Explosion (hit.point); //making xploding
-			Invoke("destructCurrentGo", 1);
+			destructCurrentGo();
+			Debug.Log(this.currentWord);
 			 //destroy object
 			return(currentLetter);
 		} 
@@ -59,14 +65,22 @@ public class CheckLetters : MonoBehaviour
 		{
 			return '0';                                                        
 		}
-	}
 
+
+	}
+	
+	void setCurrentWordSharp(string word)
+	{
+				this.currentWord = word;
+	}
 
 
 	char rayLetter (GameObject go)
 	{
+		char letter = go.name [5];
+
 		// name of clouds = CloudX, CloudA, etc.. 
-		return (go.name[5]);
+		return (letter);
 	}
 
 

@@ -25,8 +25,9 @@ function RandomWord(length : int) : String
      
      GetComponent(TextMesh).text = returnWord;
      currentWord = returnWord;
-     
+   
 }
+
 
 function getCurrentWord()
 {

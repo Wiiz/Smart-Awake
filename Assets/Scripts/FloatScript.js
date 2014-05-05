@@ -18,7 +18,19 @@ function Start()
 
 function Update()
 {
+	makeFloat();
+}
 
+
+function makeFloat()
+{
+  transform.position.y = startY + Mathf.Sin(Time.time * speed) * floatSpan / 2.0;
+}
+
+function makeSuffle()
+{
+
+	
 	var randomX = Random.Range(-strayFactor, strayFactor);
 	var randomY = Random.Range(-strayFactor, strayFactor);
 	var randomZ = Random.Range(-strayFactor, strayFactor);
@@ -26,10 +38,5 @@ function Update()
     transform.position.y = strayFactor + (startY * Mathf.Sin(Time.time * speed));
     
     transform.position.x = strayFactor + (startX * Mathf.Sin(Time.time * speed));
-}
-
-
-function makeFloat()
-{
-  transform.position.y = startY + Mathf.Sin(Time.time * speed) * floatSpan / 2.0;
+    
 }
